@@ -1,14 +1,19 @@
 <template>
     <div>
-        <BaseButton name="buttonName" :onClick="homeOnClick"/>
+        <BaseButton :name="buttonName" :onClick="homeOnClick"/>
     </div>
 </template>
 
 <script>
-import BaseButton  from '../../components/Button/BaseButton'
+import BaseButton  from '../../components/BaseButton'
     export default {
         name: 'Home',
         components: { BaseButton },
+        data() {
+            return {
+                buttonName: "Button Name"
+            }
+        },
         methods: {
            homeOnClick() {
                console.log("CLICK FROM HOME")

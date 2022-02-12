@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: 'BaseButtton',
+        name: 'BaseButton',
         props: {
             name: {
                 type: String,
