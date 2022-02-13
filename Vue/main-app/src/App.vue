@@ -6,7 +6,7 @@
       dark
     >
       <div class="d-flex align-center">
-        Main Project Home Page
+        Welcome to the Main project
       </div>
 
       <v-spacer></v-spacer>
@@ -24,7 +24,6 @@
     <v-main>
       <Home/>
     </v-main>
-    
   </v-app>
 </template>
 

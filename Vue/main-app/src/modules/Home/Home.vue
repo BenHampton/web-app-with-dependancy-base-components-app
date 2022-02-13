@@ -16,7 +16,16 @@
         cols="12"
       >
         <v-row justify="center">
-          TEST 2
+          Base Component Button From base-components-library
+        </v-row>
+      </v-col>
+
+       <v-col
+        class="mb-5"
+        cols="12"
+      >
+        <v-row justify="center">
+          <BaseButton :name="buttonName" :onClick="onMyClick"/>
         </v-row>
       </v-col>
       
@@ -27,5 +36,15 @@
 <script>
   export default {
     name: 'Home',
+    data() {
+      return {
+        buttonName: 'Test Name'
+      }
+    },
+    methods: {
+      onMyClick() {
+        console.log("we are working!!")
+      }
+    }
   }
 </script>

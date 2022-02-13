@@ -6,6 +6,7 @@
 </template>
 
 <script>
+// reference https://github.com/team-innovation/vue-sfc-rollup/pull/91 for not being able to start the serve out of the box
 import Vue from 'vue';
 // Uncomment import and local "components" registration if library is not registered globally.
 import { BaseComponentsLibrarySample } from '@/entry.esm';
