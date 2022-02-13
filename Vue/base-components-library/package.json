@@ -1,0 +1,54 @@
+{
+  "name": "base-components-library",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "prebuild": "rimraf ./dist"
+  },
+  "main": "dist/base-components-library.ssr.js",
+  "module": "dist/base-components-library.esm.js",
+  "browser": "dist/base-components-library.esm.js",
+  "unpkg": "dist/base-components-library.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "dependencies": {
+    "core-js": "^3.21.0",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "cross-env": "^7.0.3",
+    "minimist": "^1.2.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.8",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^5.1.9",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue": "^2.6.14",
+    "vue-cli-plugin-vuetify": "^2.4.5",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.14"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "sideEffects": false
+}
